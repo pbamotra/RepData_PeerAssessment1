@@ -237,13 +237,10 @@ MAX_step_interval &lt;- AVG_per_5min_interval[which.max(AVG_per_5min_interval$st
 <h2>Imputing missing values</h2>
 
 <pre><code class="r">## calculate the total number of missing values in the dataset
-total.NAs &lt;- sum(is.na(data))
+total.NAs &lt;- sum(is.na(activity_data))
 </code></pre>
 
-<pre><code>## Warning: is.na() applied to non-(list or vector) of type &#39;closure&#39;
-</code></pre>
-
-<p>The total no. of NA(missing) values in the dataset are 0.<br/>
+<p>The total no. of NA(missing) values in the dataset are 2304.<br/>
 We will replace the missing NA values with average of interval steps across all the days under
 consideration.</p>
 

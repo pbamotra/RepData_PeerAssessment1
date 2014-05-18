@@ -72,14 +72,10 @@ The 5-minute interval, on average across all days, that contains the maximum num
 
 ```r
 ## calculate the total number of missing values in the dataset
-total.NAs <- sum(is.na(data))
+total.NAs <- sum(is.na(activity_data))
 ```
 
-```
-## Warning: is.na() applied to non-(list or vector) of type 'closure'
-```
-
-The total no. of NA(missing) values in the dataset are 0.  
+The total no. of NA(missing) values in the dataset are 2304.  
 We will replace the missing NA values with average of interval steps across all the days under
 consideration.
 
